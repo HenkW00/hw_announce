@@ -2,12 +2,20 @@ fx_version 'cerulean'
 games { 'gta5' }
 
 author 'HenkW'
-description 'Simple announcement script with okok, mythic, chat and esx notify support
+description 'Simple announcement script with okok, mythic, chat and esx notify support'
 version '1.0.2'
 
-server_script 'server.lua'
-server_script 'version.lua'
-client_script 'client.lua'
-shared_script 'config.lua'
+server_scripts {
+    'server/main.lua',
+    'server/version.lua'
+}
+
+client_scripts {
+    'client/main.lua'
+}
+
+shared_scripts {
+    'config.lua'
+}
 
 shared_script '@es_extended/imports.lua'
