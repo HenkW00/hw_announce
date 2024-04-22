@@ -3,7 +3,7 @@ games { 'gta5' }
 
 author 'HenkW'
 description 'Simple announcement script with okok, mythic, chat and esx notify support'
-version '1.0.4'
+version '1.0.5'
 
 server_scripts {
     'server/main.lua',
