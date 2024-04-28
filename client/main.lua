@@ -1,9 +1,5 @@
 ESX = exports["es_extended"]:getSharedObject()
 
--- ESX = nil
-
--- TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
 RegisterNetEvent('hw_announce:showNotification')
 AddEventHandler('hw_announce:showNotification', function(msg, system)
     if Config.notifySystem == 'esx' then
